@@ -1,0 +1,23 @@
+{
+  "root": "packages/jest-bug",
+  "sourceRoot": "packages/jest-bug/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/jest-bug/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/jest-bug"],
+      "options": {
+        "jestConfig": "packages/jest-bug/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

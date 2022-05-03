@@ -1,4 +1,7 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "jest-bug": "packages/jest-bug",
+    "tests": "packages/tests"
+  }
 }

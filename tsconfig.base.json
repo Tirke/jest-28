@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@jest-28-bug/jest-bug": ["packages/jest-bug/src/index.ts"],
+      "@jest-28-bug/tests": ["packages/tests/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
